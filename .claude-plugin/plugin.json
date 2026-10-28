@@ -2,9 +2,18 @@
   "name": "chatvault",
   "description": "Automatic, local, open-format backups of your AI conversations (Claude Code, Codex, Gemini CLI, ChatGPT, claude.ai), searchable from any agent via MCP.",
   "version": "0.1.0",
-  "author": { "name": "Nilay Baranwal" },
+  "author": {
+    "name": "Nilay Baranwal"
+  },
   "homepage": "https://github.com/alphasr/chatvault",
   "repository": "https://github.com/alphasr/chatvault",
   "license": "MIT",
-  "keywords": ["backup", "export", "chat-history", "memory", "mcp"]
+  "keywords": [
+    "backup",
+    "export",
+    "chat-history",
+    "memory",
+    "mcp"
+  ],
+  "mcpServers": "./mcp.json"
 }

@@ -8,7 +8,7 @@
   "license": "MIT",
   "keywords": ["backup", "export", "chat-history", "mcp"],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
+  "mcpServers": "./mcp.json",
   "interface": {
     "displayName": "ChatVault",
     "shortDescription": "Back up and search your AI conversation history",
