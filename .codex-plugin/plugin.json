@@ -1,6 +1,6 @@
 {
   "name": "chatvault",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Automatic, local, open-format backups of your AI conversations, searchable from any agent via MCP.",
   "author": { "name": "Nilay Baranwal" },
   "homepage": "https://github.com/alphasr/chatvault",

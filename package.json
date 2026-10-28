@@ -1,6 +1,6 @@
 {
   "name": "chatvault",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Own your AI conversation history. Automatic, local, open-format backups of Claude Code, Codex, Gemini CLI, ChatGPT and claude.ai chats — searchable from any agent via MCP.",
   "bin": {
     "chatvault": "bin/chatvault.js"

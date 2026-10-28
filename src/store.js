@@ -29,6 +29,8 @@ class Vault {
 
   init() {
     fs.mkdirSync(this.metaDir, { recursive: true });
+    // Also locks down vaults created world-readable by 0.1.0.
+    fs.chmodSync(this.dir, 0o700);
     const readme = path.join(this.dir, 'README.md');
     if (!fs.existsSync(readme)) fs.writeFileSync(readme, VAULT_README);
     return this;

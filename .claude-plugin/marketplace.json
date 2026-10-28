@@ -1,13 +1,13 @@
 {
   "name": "chatvault",
   "owner": { "name": "Nilay Baranwal" },
-  "metadata": { "description": "Own your AI conversation history", "version": "0.1.0" },
+  "metadata": { "description": "Own your AI conversation history", "version": "0.1.1" },
   "plugins": [
     {
       "name": "chatvault",
       "source": "./",
       "description": "Automatic, local, open-format backups of your AI conversations, searchable from any agent via MCP.",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }

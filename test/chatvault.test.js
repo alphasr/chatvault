@@ -308,6 +308,31 @@ test('git: a failed push still reports the local commit', () => {
   assert.match(r.error, /^push failed/);
 });
 
+test('vault and exports are owner-only, even for a vault made world-readable', { skip: process.platform === 'win32' }, () => {
+  const vault = path.join(tmp, 'private-vault');
+  fs.mkdirSync(vault, { mode: 0o755 });
+  fs.chmodSync(vault, 0o755);
+  const cfg = path.join(tmp, 'private-config.json');
+  fs.writeFileSync(cfg, JSON.stringify({ ...JSON.parse(fs.readFileSync(process.env.CHATVAULT_CONFIG, 'utf8')), vaultDir: vault }));
+  const env = { ...process.env, CHATVAULT_CONFIG: cfg };
+  const bin = path.join(__dirname, '..', 'bin', 'chatvault.js');
+  execFileSync(process.execPath, [bin, 'backup'], { env });
+  const out = path.join(tmp, 'private-export.jsonl');
+  execFileSync(process.execPath, [bin, 'export', '--out', out], { env });
+
+  const mode = (p) => fs.statSync(p).mode & 0o777;
+  assert.strictEqual(mode(vault), 0o700);
+  const files = [out, path.join(vault, 'index.json'), ...walkFiles(vault).filter((f) => f.endsWith('.json'))];
+  assert.ok(files.length > 2);
+  for (const f of files) assert.strictEqual(mode(f), 0o600, f);
+});
+
+function walkFiles(dir) {
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
+    e.isDirectory() ? walkFiles(path.join(dir, e.name)) : [path.join(dir, e.name)]
+  );
+}
+
 test('scheduler files survive &, quotes and % in paths', () => {
   const { plistFor, cronLineFor } = require('../src/schedule');
   const weird = path.join(tmp, "R&D <it's> 100%", 'chatvault.js');

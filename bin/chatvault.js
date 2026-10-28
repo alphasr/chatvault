@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 'use strict';
+// The vault holds private chats: everything this process creates is owner-only.
+// shortcut: covers the CLI, hooks and MCP server; library callers must set their own umask.
+process.umask(0o077);
 const fs = require('fs');
 const path = require('path');
 const config = require('../src/config');
