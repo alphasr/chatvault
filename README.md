@@ -24,7 +24,7 @@ claude.ai zip┘
 ### Claude Code (plugin)
 
 ```
-/plugin marketplace add nilaybaranwal/chatvault
+/plugin marketplace add alphasr/chatvault
 /plugin install chatvault@chatvault
 ```
 
@@ -44,7 +44,7 @@ The plugin adds:
 The repo has a manifest for each agent: `.codex-plugin/`, `.cursor-plugin/` and `gemini-extension.json`. Each one gives that agent the skill and the MCP server.
 
 ```bash
-gemini extensions install https://github.com/nilaybaranwal/chatvault
+gemini extensions install https://github.com/alphasr/chatvault
 ```
 
 For any other MCP client, add this to its MCP config:

@@ -2,7 +2,7 @@
 // Open Chat Archive (OCA) v1 — the portable format every adapter produces.
 // Spec: docs/FORMAT.md
 
-const SCHEMA = 'https://github.com/nilaybaranwal/chatvault/blob/main/docs/FORMAT.md#v1';
+const SCHEMA = 'https://github.com/alphasr/chatvault/blob/main/docs/FORMAT.md#v1';
 
 const ROLES = new Set(['user', 'assistant', 'system', 'tool']);
 

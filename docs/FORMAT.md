@@ -21,7 +21,7 @@ binary parts. When in doubt, the format keeps data rather than dropping it.
 
 ```jsonc
 {
-  "schema": "https://github.com/nilaybaranwal/chatvault/blob/main/docs/FORMAT.md#v1",
+  "schema": "https://github.com/alphasr/chatvault/blob/main/docs/FORMAT.md#v1",
   "id": "claude-code:9ce6cbb1-…",       // "<source>:<native_id>", globally unique
   "source": "claude-code",              // claude-code | codex | gemini-cli | chatgpt | claude-ai | …
   "native_id": "9ce6cbb1-…",            // the vendor's own id

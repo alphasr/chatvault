@@ -10,5 +10,5 @@
   "keywords": ["claude-code", "codex", "gemini-cli", "chatgpt", "claude", "backup", "export", "mcp", "plugin", "chat-history"],
   "author": "Nilay Baranwal",
   "license": "MIT",
-  "repository": "https://github.com/nilaybaranwal/chatvault"
+  "repository": "https://github.com/alphasr/chatvault"
 }

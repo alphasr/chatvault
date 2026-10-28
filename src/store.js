@@ -9,7 +9,7 @@ const { SCHEMA } = require('./schema');
 const VAULT_README = `# ChatVault
 
 This folder is a backup of your AI conversations in the open
-[Open Chat Archive (OCA) v1](https://github.com/nilaybaranwal/chatvault/blob/main/docs/FORMAT.md) format.
+[Open Chat Archive (OCA) v1](https://github.com/alphasr/chatvault/blob/main/docs/FORMAT.md) format.
 
 - \`conversations/<source>/<YYYY-MM>/<id>.json\` — full fidelity, machine readable
 - \`conversations/<source>/<YYYY-MM>/<id>.md\`   — human readable
