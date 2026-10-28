@@ -1,0 +1,11 @@
+{
+  "name": "chatvault",
+  "displayName": "ChatVault",
+  "description": "Automatic, local, open-format backups of your AI conversations, searchable via MCP.",
+  "version": "0.1.0",
+  "author": { "name": "Nilay Baranwal" },
+  "repository": "https://github.com/nilaybaranwal/chatvault",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

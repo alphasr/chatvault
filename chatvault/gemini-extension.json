@@ -1,0 +1,12 @@
+{
+  "name": "chatvault",
+  "version": "0.1.0",
+  "description": "Automatic, local, open-format backups of your AI conversations, searchable via MCP.",
+  "contextFileName": "AGENTS.md",
+  "mcpServers": {
+    "chatvault": {
+      "command": "node",
+      "args": ["${extensionPath}/bin/chatvault.js", "mcp"]
+    }
+  }
+}

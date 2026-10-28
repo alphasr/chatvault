@@ -1,0 +1,20 @@
+{
+  "name": "chatvault",
+  "version": "0.1.0",
+  "description": "Automatic, local, open-format backups of your AI conversations, searchable from any agent via MCP.",
+  "author": { "name": "Nilay Baranwal" },
+  "homepage": "https://github.com/nilaybaranwal/chatvault",
+  "repository": "https://github.com/nilaybaranwal/chatvault",
+  "license": "MIT",
+  "keywords": ["backup", "export", "chat-history", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ChatVault",
+    "shortDescription": "Back up and search your AI conversation history",
+    "developerName": "Nilay Baranwal",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": ["Back up my chats now", "What did we decide about the auth flow last month?"]
+  }
+}

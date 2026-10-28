@@ -1,0 +1,14 @@
+{
+  "name": "chatvault",
+  "version": "0.1.0",
+  "description": "Own your AI conversation history. Automatic, local, open-format backups of Claude Code, Codex, Gemini CLI, ChatGPT and claude.ai chats — searchable from any agent via MCP.",
+  "bin": { "chatvault": "bin/chatvault.js" },
+  "main": "src/backup.js",
+  "files": ["bin", "src", "docs", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test test/*.test.js" },
+  "engines": { "node": ">=18" },
+  "keywords": ["claude-code", "codex", "gemini-cli", "chatgpt", "claude", "backup", "export", "mcp", "plugin", "chat-history"],
+  "author": "Nilay Baranwal",
+  "license": "MIT",
+  "repository": "https://github.com/nilaybaranwal/chatvault"
+}

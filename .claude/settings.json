@@ -1,0 +1,15 @@
+{
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "ponytail@ponytail": true,
+    "superpowers@superpowers-marketplace": true,
+    "elements-of-style@superpowers-marketplace": true,
+    "andrej-karpathy-skills@karpathy-skills": true,
+    "plugin-dev@claude-plugins-official": true,
+    "mcp-server-dev@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true
+  }
+}
